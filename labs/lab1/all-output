@@ -1,0 +1,35 @@
+copying runtime jar...
+[info] welcome to sbt 1.3.13 (Ubuntu Java 11.0.17)
+[info] loading project definition from /home/hannes/Documents/EDAN26 Multicore/labs/lab1/project
+[info] loading settings for project lab1 from build.sbt ...
+[info] running main 
+22:56:42.347 [Main-akka.actor.default-dispatcher-7] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+[error] (run-main-0) java.util.concurrent.TimeoutException: Future timed out after [4 seconds]
+[error] java.util.concurrent.TimeoutException: Future timed out after [4 seconds]
+[error] 	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:212)
+[error] 	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:225)
+[error] 	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+[error] 	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+[error] 	at scala.concurrent.Await$.result(package.scala:124)
+[error] 	at main$.delayedEndpoint$main$1(preflow.scala:245)
+[error] 	at main$delayedInit$body.apply(preflow.scala:201)
+[error] 	at scala.Function0.apply$mcV$sp(Function0.scala:39)
+[error] 	at scala.Function0.apply$mcV$sp$(Function0.scala:39)
+[error] 	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+[error] 	at scala.App.$anonfun$main$1(App.scala:73)
+[error] 	at scala.App.$anonfun$main$1$adapted(App.scala:73)
+[error] 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:553)
+[error] 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:551)
+[error] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:921)
+[error] 	at scala.App.main(App.scala:73)
+[error] 	at scala.App.main$(App.scala:71)
+[error] 	at main$.main(preflow.scala:201)
+[error] 	at main.main(preflow.scala)
+[error] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[error] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[error] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[error] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+[error] stack trace is suppressed; run 'last Compile / bgRun' for the full output
+
+[warn] Canceling execution...
+[warn] Run canceled.
